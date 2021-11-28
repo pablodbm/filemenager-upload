@@ -1,0 +1,43 @@
+<div class="header">
+  <div class="container">
+    <a href="/upload"><span class="href">UPLOAD</span></a>
+    <a href="/filemanager"><span class="href">FILEMANAGER</span></a>
+    <a href="/info"><span class="href">INFO</span></a>
+  </div>
+</div>
+<div class="cells">
+  <div class="left">
+    <span>filemanager</span>
+    <p><a class="hrefik2" href="/deletedata">Usuń dane o
+        <br />
+        plikach z tablicy</a></p>
+
+  </div>
+  <div class="right">
+    <table class="table">
+      <tr class="Row1">
+        <td>id</td>
+        <td>obraz</td>
+        <td>name</td>
+        <td>size</td>
+        <td>type</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      {{#each tab}}
+        <tr class="rzad">
+          <td>{{id}}</td>
+          <td><img src="gfx/{{source}}" width="50px" height="50px" /></td>
+          <td>{{name}}</td>
+          <td>{{size}}</td>
+          <td>{{type}}</td>
+          <td><a class="przekierowanie" href="/delete?p={{id}}">Delete</a></td>
+          <td class="przekierowanie">INFO</td>
+          <td class="przekierowanie">DOWNLOAD</td>
+
+        </tr>
+      {{/each}}
+    </table>
+  </div>
+</div>

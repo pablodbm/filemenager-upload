@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="container">
+        <a href="/upload"><span class="href">UPLOAD</span></a>
+        <a href="/filemanager"><span class="href">FILEMANAGER</span></a>
+        <a href="/info"><span class="href">INFO</span></a>
+    </div>
+</div>
+<div class="cells">
+    <div class="left">
+        <span>multiupload</span>
+    </div>
+    <div class="right">
+        <form class="form" accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" enctype="multipart/form-data"
+            method="POST" action="/filemanager">
+            <input type="file" multiple required accept="image/*" name="imageupload">
+            <input type="submit" value="upload">
+        </form>
+    </div>
+</div>
